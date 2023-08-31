@@ -1,6 +1,8 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id'com.android.application'
+    id'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -29,6 +31,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    dataBinding {
+        //noinspection DataBindingWithoutKapt
+        enabled = true
+    }
+    dataBinding.enabled = true
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,8 +54,8 @@ dependencies {
     implementation("androidx.room:room-runtime:2.5.2")
     implementation("com.github.bumptech.glide:glide:4.15.1")
     implementation("com.karumi:dexter:5.0.0")
-    implementation("androidx.lifecycle:lifecycle-livedata:2.6.1")
-    implementation("androidx.lifecycle:lifecycle-livedata-core:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation("android.arch.navigation:navigation-fragment:1.0.0")
     /* Android Kapt Libs */
@@ -60,6 +70,13 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
     implementation("org.koin:koin-android-viewmodel:2.0.1")
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0"
+
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation("uk.co.chrisjenx:calligraphy:2.2.0")
+    implementation("com.crystal:crystalpreloaders:1.0.0")
     /* Test */
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
