@@ -6,17 +6,8 @@
     android:layout_height="match_parent"
     android:layout_margin="@dimen/spacing_sm">
 
-    <ImageView
-        android:id="@+id/eurImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:textColor="#c4c4c4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/titleEurTextView"
-        app:layout_constraintTop_toTopOf="@id/titleEurTextView" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleEurTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -24,19 +15,19 @@
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="20dp"
-        android:text="0.0"
+        android:text="@string/_0_0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/eurImageView"
+        app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/eurCurrencyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
-        android:text="EUR"
+        android:text="@string/eur"
         android:textColor="#c4c4c4"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/titleEurTextView"
@@ -44,17 +35,8 @@
         app:layout_constraintTop_toTopOf="@id/titleEurTextView"
         tools:text="EUR" />
 
-    <ImageView
-        android:id="@+id/jpyImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:textColor="#c4c4c4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/titleJpyTextView"
-        app:layout_constraintTop_toTopOf="@id/titleJpyTextView" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleJpyTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -62,19 +44,19 @@
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="20dp"
-        android:text="0.0"
+        android:text="@string/_0_0"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/jpyImageView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleEurTextView" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/jpyCurrencyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
-        android:text="JPY"
+        android:text="@string/jpy"
         android:textColor="#c4c4c4"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/titleJpyTextView"
@@ -82,17 +64,8 @@
         app:layout_constraintTop_toTopOf="@id/titleJpyTextView"
         tools:text="JPY" />
 
-    <ImageView
-        android:id="@+id/gbpImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:textColor="#c4c4c4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/titleGbpTextView"
-        app:layout_constraintTop_toTopOf="@id/titleGbpTextView" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleGbpTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -100,19 +73,19 @@
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="20dp"
-        android:text="0.0"
+        android:text="@string/_0_0"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gbpImageView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleJpyTextView" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/gbpCurrencyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
-        android:text="GBP"
+        android:text="@string/gbp"
         android:textColor="#c4c4c4"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/titleGbpTextView"
@@ -120,17 +93,8 @@
         app:layout_constraintTop_toTopOf="@id/titleGbpTextView"
         tools:text="GBP" />
 
-    <ImageView
-        android:id="@+id/blrImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:textColor="#c4c4c4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/titleBrlTextView"
-        app:layout_constraintTop_toTopOf="@id/titleBrlTextView" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/titleBrlTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -138,19 +102,19 @@
         android:ellipsize="end"
         android:maxLines="1"
         android:padding="20dp"
-        android:text="0.0"
+        android:text="@string/_0_0"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gbpImageView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleGbpTextView" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/blrCurrencyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
-        android:text="BLR"
+        android:text="@string/blr"
         android:textColor="#c4c4c4"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/titleBrlTextView"
